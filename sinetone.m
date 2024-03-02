@@ -5,3 +5,4 @@ f = 5000; % Frequency of the sine tone
 y = sin(2*pi*f*t);
 audiowrite('Duong-sinetone.wav', y, fs);
 spectrogram(y, 1024, 512, 1024, fs, 'yaxis');
+title('Spectrogram of Sinetone');
